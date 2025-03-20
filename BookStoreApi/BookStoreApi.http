@@ -1,6 +1,21 @@
 @BookStoreApi_HostAddress = http://localhost:5271
 
-GET {{BookStoreApi_HostAddress}}/weatherforecast/
-Accept: application/json
+
+GET {{BookStoreApi_HostAddress}}/api/books
+
+###
+
+GET {{BookStoreApi_HostAddress}}/api/books/67dbd43be0dbed87dab71237
+###
+
+POST {{BookStoreApi_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+  "Name": "Basket",
+  "Price": 24.15,
+  "Category": "Sport",
+  "Author": "Alin Popovici"
+}
 
 ###
