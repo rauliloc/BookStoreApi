@@ -4,6 +4,9 @@ using System.Text.Json.Serialization;
 
 namespace BookStoreApi.Models;
 
+/// <summary>
+/// Defines the Book model.
+/// </summary>
 public class Book
 {
     [BsonId]
